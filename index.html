@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IMC</title>
+	<meta name="descripcion" content="indice de masa corporal">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+</div>
+<div class="content-section block">
+    <div class="content-block">
+        <div class="form-block">
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1>IMC</h1>
+                        <h2>CÁLCULO DEL ÍNDICE DE MASA CORPORAL</h2>
+                    </div>
+                    <img src="./assets/img/R.jpg" alt="" class="img">
+                    <div class="container2">
+                        <div class="col-xs-10 col-md-10">
+                            <label><b>Nombre:</b></label><br >
+                            <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" class="form-control">
+                        </div>
+                        <div class="col-xs-10 col-md-10">
+                            <label><b>Estatura:</b></label><br >
+                            <input id="estatura" name="estatura" type="text" placeholder="cm" class="form-control">
+                        </div>
+                        <br >
+                        <div class="col-xs-10 col-md-10">
+                            <label><b>Peso:</b></label><br >
+                            <input id="peso" name="peso" type="text" placeholder="kg" class="form-control">
+                        </div>
+                        <br >
+                    </div>
+                    <div class="col-xs-10 col-md-10 resultado">
+                        <label><b>Resultado:</b></label><br >
+                        <label id="imc" name="imc" class="form-control"></label>
+                    </div>
+                    <br >
+                    <div class="col-xs-10 col-md-10">
+                        <button id="calcular" type="" class="btn btn-primary btn-lg" onclick="calcularIMC()">Calcular</button>
+                        <button id="limpiar" type="" class="btn btn-primary btn-lg" onclick="limpiarInput()">Limpiar</button>
+                    </div>
+                    <br >
+                    
+                    <label id="comentario" name="comentario"></label>
+                </div>
+		</div>
+	</div>
+    <script src="./src/controllers/controladorImc.js"></script>
+</body>
+</html> 
